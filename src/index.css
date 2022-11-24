@@ -1,1 +1,157 @@
 
+  html, body {
+    margin: 0 !important;
+    padding: 0 !important;
+    
+    
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+body {
+    background-color:  #FFFFFF;
+}
+
+/*------Navbar Style-----*/
+.nav {
+    display: flex;
+    justify-content: center;
+    color:  #FFFFFF;
+    background-color: #F55A5A;
+    position: absolute;
+    width: 100%;
+    height: 55px;
+    left: 0px;
+    top: 0px;
+    padding: 10px 0;
+}
+.nav--img {
+    filter: brightness(0) invert(1);
+    width: 60px;
+    margin-right: 15px;
+}
+
+/*--------Travel Style---------*/
+.travel {
+    margin: 5% 10%;
+    padding: 10px;
+    
+}
+
+.travel--content {
+    display: flex;
+    height: 300px;
+    width: 100%;
+    margin-bottom: 40px;
+    overflow: hidden;
+    
+}
+
+.travel--content img {
+    
+    object-fit: cover;
+    background-size: cover;
+    border-radius: 25px;
+    
+}
+.description {
+    margin-top: 40px;
+    margin-left: 60px;
+}
+
+.location {
+    display: flex;
+    align-items: center;
+   
+}
+
+.location--icon {
+    margin-right: 15px;
+}
+
+.location--country {
+    color: #2B283A;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 12px;
+    letter-spacing: 0.17em;
+    margin-right: 15px;
+}
+
+.location > a {
+    color: #918E9B;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 12px;
+    /* identical to box height */
+    text-decoration-line: underline;
+    
+}
+
+.place--name > h2 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+    color: #2B283A;
+
+}
+
+.place--name > p > strong {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 12px;
+    color: #2B283A;
+
+}
+
+.place--name > p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 150%;
+    color: #2B283A;
+}
+
+
+/*---Ipad version---*/
+@media only screen and (max-width : 1024px){
+    .travel {
+        padding: 20px;
+    }
+}
+
+/*----Mobile Version---*/
+@media only screen and (max-width : 768px){
+    .travel {
+        padding: 10px;
+    }
+    .travel--content {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+        height: auto;
+        
+    }
+    .travel--content img {
+        width: 300px;
+        border-radius: 55px;
+    }
+
+    .description {
+        margin-top: 10px;
+        margin-left: 0;
+    }
+
+    
+}
